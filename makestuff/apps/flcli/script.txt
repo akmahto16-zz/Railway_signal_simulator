@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ../../libs/libusbwrap/
+echo '' >> libusbwrap.c
+make deps
+cd ../libfpgalink/
+echo '' >> libfpgalink.c
+make deps
+cd ../../apps/flcli/
+echo '' >> main.c
+make deps
